@@ -1,0 +1,46 @@
+body{
+    background: url(images/lasagna-home.jpg);
+    /* border: 2px solid black; */
+}
+
+.transbox {
+    position: relative;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding:0.5% 5% 5% .5%;
+    text-align: center;
+    /* Create a pseudo-element using ::before with empty content.
+    CSS: Remove opacity inheritance from parent to children
+    the text content inside div content wont get transparent */
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: #ffffff;
+        border: 1px solid black;
+        border-radius: 10px;
+        opacity: 0.6;
+        background-size: contain;
+    }
+  }
+
+h1{
+    position: relative;
+    font-size: 60px;
+}
+
+a{
+    position: relative;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+}
+
+/* .transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+  } */
